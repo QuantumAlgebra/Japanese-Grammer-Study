@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japanese Grammar Index — N5 to N3</title>
+<title>Japanese Grammar Index — N5 to N2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;800&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,6 +25,10 @@
     --n4-soft:#DCE4EC;
     --n3:#8A4A47;
     --n3-soft:#EBDCD9;
+    --n2:#6A2E8D;
+    --n2-soft:#C3ABD1;
+    --n1:#FFCE00;
+    --n1-soft:#FFEB99;
     --radius:3px;
     --tab-w:64px;
   }
@@ -103,6 +107,8 @@
   .rail-tab[data-level="N5"]{background:var(--n5);}
   .rail-tab[data-level="N4"]{background:var(--n4);}
   .rail-tab[data-level="N3"]{background:var(--n3);}
+  .rail-tab[data-level="N2"]{background:var(--n2);}
+  .rail-tab[data-level="N1"]{background:var(--n1);}
   .rail-tab .count{
     display:block;
     font-family:'IBM Plex Mono',monospace;
@@ -265,6 +271,8 @@
   .stamp.N5{background:var(--n5);}
   .stamp.N4{background:var(--n4);}
   .stamp.N3{background:var(--n3);}
+  .stamp.N2{background:var(--n2);}
+  .stamp.N1{background:var(--n1);}
 
   .head-text{flex:1 1 auto; min-width:0;}
   .pattern-row{
@@ -416,14 +424,16 @@
       <button class="rail-tab" data-level="N5">N5<span class="count" id="count-N5"></span></button>
       <button class="rail-tab" data-level="N4">N4<span class="count" id="count-N4"></span></button>
       <button class="rail-tab" data-level="N3">N3<span class="count" id="count-N3"></span></button>
+      <button class="rail-tab" data-level="N2">N2<span class="count" id="count-N2"></span></button>
+      <button class="rail-tab" data-level="N1">N1<span class="count" id="count-N1"></span></button>
     </div>
   </nav>
 
   <div class="main">
     <header class="masthead">
-      <p class="eyebrow">JLPT Reference — N5 · N4 · N3</p>
+      <p class="eyebrow">JLPT Reference — N5 · N4 · N3 · N2</p>
       <h1 class="title"><span class="jp-big">文法索引</span><span class="sub">Grammar Index</span></h1>
-      <p class="dek">A working reference of Japanese grammar patterns from N5 through N3. Every entry gives a plain-language explanation, a simple example, and a more complex example, with furigana over every kanji.</p>
+      <p class="dek">A working reference of Japanese grammar patterns from N5 through N1. Every entry gives a plain-language explanation, a simple example, and a more complex example, with furigana over every kanji.</p>
     </header>
 
     <div class="controls">
@@ -439,10 +449,10 @@
 
     <footer class="credits">
       <span class="stamp-mark">印</span>
-      Compiled for personal JLPT study (N5–N3). Non-commercial uses only. Example sentences and base grammar definitions are drawn from
+      Compiled for personal JLPT study (N5–N1). Non-commercial uses only. Example sentences and base grammar definitions are drawn from
       <a href="http://japanesetest4you.com" target="_blank" rel="noopener">japanesetest4you.com</a>,
       with additional explanations, simplified examples, and furigana annotations added for this reference.
-      N2 and N1 to follow in a separate build.
+      Further bug fixes and additions will follow in later builds
     </footer>
   </div>
 
